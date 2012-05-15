@@ -1,0 +1,13 @@
+{ "name": "Configuration", 
+  "sections": [
+    { "section": "intro.md" },
+    { "section": "exercise.md" },
+    { "section": "concepts.md" },
+    { "section": "goal.md" },
+    { "section": "exercise.md" },
+    { "section": "timer1.md" },
+    { "section": "retrospective.md" },
+    { "section": "lesson.md" },
+    { "section": "exercise.md" },
+    { "section": "timer2.md" } ]
+}
