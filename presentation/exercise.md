@@ -2,7 +2,7 @@
 
 # Exercise
 
-Create a client that consumes the Github Gist API
+Create a client that consumes the __Github Gist API__
 
 !SLIDE quote
 

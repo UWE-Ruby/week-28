@@ -32,21 +32,18 @@ $ curl https://api.github.com/gists
 ## `exec`, `system`, `backticks` or `%x()`
 
 ```ruby
+exec "curl https://api.github.com/gists"
 
-gist_scheme_and_host = "https://api.github.com"
-gist_url = "/gists"
+`curl https://api.github.com/gists`
 
-request_url = File.join(gist_scheme_and_host,gist_url)
+%x(curl https://api.github.com/gists)
 
-exec "curl #{request_url}"
-`curl #{request_url}`
-%x(curl #{request_url})
-system "curl #{request_url}"
+system "curl https://api.github.com/gists"
 ```
 
 !SLIDE quote
 
-## Running Shell Commands in Ruby
+## More Details
 
 http://tech.natemurray.com/2007/03/ruby-shell-commands.html
 
@@ -118,7 +115,7 @@ parsed_data.class # => Hash
 
 ## XML
 
-> Afterwards, ask me about __HappyMapper__
+> Ask me about __HappyMapper__ (afterwords)
 
 !SLIDE
 
