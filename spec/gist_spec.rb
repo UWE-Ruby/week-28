@@ -1,29 +1,42 @@
 require_relative 'spec_helper'
 
 describe Gister::Gist do
-  
-  describe "#public_gists" do
-    before do
-      
-    end
-    
-    it "should request all the public gists" do
-      subject.public_gists
-    end
+
+  let(:example_gist) do
+      {
+        "url" => "https =>//api.github.com/gists/1",
+        "id" => "1",
+        "description" => "description of gist",
+        "public" => true,
+        "user" => {
+          "login" => "octocat",
+          "id" => 1,
+          "avatar_url" => "https =>//github.com/images/error/octocat_happy.gif",
+          "gravatar_id" => "somehexcode",
+          "url" => "https =>//api.github.com/users/octocat"
+        },
+        "files" => {
+          "ring.erl" => {
+            "size" => 932,
+            "filename" => "ring.erl",
+            "raw_url" => "https =>//gist.github.com/raw/365370/8c4d2d43d178df44f4c03a7f2ac0ff512853564e/ring.erl",
+            "content" => "contents of gist"
+          }
+        },
+        "comments" => 0,
+        "html_url" => "https =>//gist.github.com/1",
+        "git_pull_url" => "git =>//gist.github.com/1.git",
+        "git_push_url" => "git@gist.github.com =>1.git",
+        "created_at" => "2010-04-14T02 =>15 =>15Z"
+      }
   end
-  
-  describe "#gists" do
-    context "when you are logged in" do
-      it "should request all of your gists" do
-        
-      end
-    end
-    context "when you are not logged in" do
-      it "should request all the public gists" do
-        
-      end
-    end
+
+  subject do
+    Gister::GistBuilder.gist example_gist
   end
-  
-  
+
+  its(:url) { should eq example_gist['url'] }
+  its(:id) { should eq "1" }
+  its(:user) { should be_kind_of Gister::User }
+
 end

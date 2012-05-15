@@ -1,10 +1,46 @@
-
-class Gister::Gist
-
-  def public_gists
-
-  end
-
-
+#
+#
+# @example
+#
+#     [
+#       {
+#         "url": "https://api.github.com/gists/1",
+#         "id": "1",
+#         "description": "description of gist",
+#         "public": true,
+#         "user": {
+#           "login": "octocat",
+#           "id": 1,
+#           "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+#           "gravatar_id": "somehexcode",
+#           "url": "https://api.github.com/users/octocat"
+#         },
+#         "files": {
+#           "ring.erl": {
+#             "size": 932,
+#             "filename": "ring.erl",
+#             "raw_url": "https://gist.github.com/raw/365370/8c4d2d43d178df44f4c03a7f2ac0ff512853564e/ring.erl",
+#             "content": "contents of gist"
+#           }
+#         },
+#         "comments": 0,
+#         "html_url": "https://gist.github.com/1",
+#         "git_pull_url": "git://gist.github.com/1.git",
+#         "git_push_url": "git@gist.github.com:1.git",
+#         "created_at": "2010-04-14T02:15:15Z"
+#       }
+#     ]
+#
+class Gister::Gist < Hashie::Dash
+  property :url
+  property :id
+  property :description
+  property :public
+  property :comments
+  property :html_url
+  property :git_pull_url
+  property :git_push_url
+  property :created_at
+  property :user
+  property :files
 end
-
