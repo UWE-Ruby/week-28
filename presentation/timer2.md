@@ -1,6 +1,6 @@
 !SLIDE countdown bullets
 
-### Consuming the Github API
+## Consuming the Github API
 
 * Understand the Gist API
 * Consume the API in Ruby
@@ -22,7 +22,7 @@
 
 </div>
 
-<div style="margin: 0px auto; width: 200px;">
+<div style="margin: 0px auto; width: 92px;">
 <button class="button" onclick="secondTimer.start();">
   START!
 </button>

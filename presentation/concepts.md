@@ -96,7 +96,9 @@ response_string = response.body
 
 !SLIDE
 
-## Handling the Response
+## Using the Response
+
+from String to Hash
 
 !SLIDE
 
@@ -105,7 +107,7 @@ response_string = response.body
 ```ruby
 require 'json'
 
-response_string = "{ "url" : "https://api.github.com/gists/2702112" }"
+response_string = "{ \"url\" : \"https://api.github.com/gists/2702112\" }"
 
 parsed_data = JSON.parse(response_string)
 parsed_data.class # => Hash
@@ -120,6 +122,8 @@ parsed_data.class # => Hash
 !SLIDE
 
 ## Parsing the Response
+
+from Hash to ...
 
 !SLIDE
 

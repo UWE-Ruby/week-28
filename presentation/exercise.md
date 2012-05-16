@@ -8,7 +8,7 @@ Create a client that consumes the __Github Gist API__
 
 ## Workflow
 
-Select a partner
+Find your partner
 
 Understand the Gist API
 

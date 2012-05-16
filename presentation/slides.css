@@ -21,12 +21,13 @@ ul li {
 
 .bullets p {
   background: url('images/tag.png') no-repeat;
-  padding-left:60px;
+  padding-left:70px;
   margin: 10px 50px;
   font-family: 'Muli', sans-serif;
   line-height: 1.5;
   font-size: 30px;
-  letter-spacing:2px
+  letter-spacing:2px;
+  text-align: left;
 }
 
 /* Button Style */
