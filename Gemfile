@@ -11,6 +11,6 @@ group :test do
 end
 
 group :presenter do
-  gem 'showoff', :git => 'git@github.com:burtlo/showoff.git', 
+  gem 'showoff', :git => 'git://github.com/burtlo/showoff.git', 
     :branch => 'merlot-theme'
 end
