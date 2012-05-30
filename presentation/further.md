@@ -16,9 +16,18 @@ one gist at a time.
 
 !SLIDE quote
 
+## Different Libraries
+
 Choose a different implementation method (e.g. open-uri, httparty, or faraday)
 
 Develop an implementation that would allow you to use either implementation
+
+!SLIDE quote
+
+## Different Modeling
+
+Choose a different implementation method (e.g. Classes, OpenStruct, Mash)
+
 
 !SLIDE
 

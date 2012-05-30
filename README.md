@@ -65,6 +65,10 @@ that created them one gist at a time.
 
 * Develop an implementation that would allow you to use either implementation
 
+#### Different Modeling
+
+* Choose a different implementation method (e.g. Classes, OpenStruct, Mash)
+
 #### URLs and Versioning
 
 * Implement helper methods that are similar to what you use in Rails 
