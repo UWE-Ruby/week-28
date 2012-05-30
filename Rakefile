@@ -1,5 +1,5 @@
 
-task :default => :specs
+task :default => :present
 
 task :present do
   `bundle exec showoff serve presentation`
